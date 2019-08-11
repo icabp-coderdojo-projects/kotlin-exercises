@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 143
+    length: 4
+    placeholder_text: /* Add whatever inputs you want here */
+- name: test/Tests.kt
+  visible: false

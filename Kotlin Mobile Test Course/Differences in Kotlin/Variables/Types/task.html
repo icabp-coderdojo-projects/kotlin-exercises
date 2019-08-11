@@ -1,0 +1,69 @@
+<html>
+<h1>Variable types</h1>
+When working with Javascript or Python, you may have heard of the term 'type', for example: <br><br>
+<code>"Example"</code> is a <code>String</code><br>
+<code>16</code> is an <code>Integer</code><br>
+<code>[2, 3, 4]</code> is an <code>Array</code>
+<br><br>
+and so on, for all 'types' of data we want to store
+<br><br>
+Types are important when programming because our programs need to know what to do with data.
+We can't add an integer the same way we add a string
+<div class="hint">
+  You might have seen this if you ever tried adding <code>1 + 1</code>, or <code>"1" + "1"</code> in Javascript or Python
+  <br>
+  In the first case, we get <code>2</code>, but in the second case, we get <code>"11"</code> <br><br>
+  This is because strings could be <code>"Hello"</code>, and <code>"world"</code>, and when we add them we want to get <code>"Hello world"</code>
+  <br><br>
+  It looks confusing because we see numbers inside our string, but they are also a <code>String</code> type, and get added the same way
+  <br><br>
+  This behaviour is because of types, which each variable is secretly given when you create it
+</div>
+<h1>Soft typed vs. Hard typed</h1>
+Some languages are called <code>soft typed</code> languages. <br>
+These languages will handle the types of variables for you
+<br>
+&nbsp;- Javascript and Python are <code>soft typed</code>
+<br><br>
+Other languages are called <code>hard typed</code> languages, which do not handle variable types.
+<br>
+&nbsp;- Kotlin is <code>hard typed</code>
+<br><br>
+For example:
+<pre><code>
+  function add(x, y) {
+    let result = x;
+    for(i=0; i < y; i++) {
+      result++;
+    }
+    return result;
+  }
+</code></pre>
+works in Javascript for any two integers, the same function in Kotlin looks like (also in the Task.kt file):
+<pre><code>
+  fun add(x: Int, y: Int): Int {
+    var result = x
+    for(i in 0 until y) {
+        result++
+    }
+    return result
+  }
+</code></pre>
+This is very bad code (and you should never write it), but works as an example
+<br><br>
+<b>Try giving our Kotlin function a <code>String</code> for <code>x</code>, <code>y</code>, or both</b>, and see what happens
+<br><br>
+You can also try the Javascript function in the Chrome/Firefox console if you want, or just look at the hint below:
+<div class="hint">
+  <pre><code>
+    >>add(1, 2)
+    - 3
+    >>add("Hello", "world")
+    - "Hello"
+    >>add(4, "world")
+    - 4
+  </code></pre>
+</div>
+As you can see, in Kotlin our function will either work or give an error, but in Javascript it will always try run, giving us the <i>wrong output without warning</i> because of it handling types for us
+<br><br>
+This is one reason some people prefer <code>hard typed</code> over <code>soft typed</code>, but both types of language have many benefits and downsides to consider

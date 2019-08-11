@@ -1,0 +1,90 @@
+{
+  "summary" : "Testing",
+  "title" : "Kotlin Mobile Test Course",
+  "programming_language" : "kotlin",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Differences in Kotlin",
+      "items" : [
+        {
+          "title" : "Variables",
+          "task_list" : [
+            {
+              "name" : "Creating variables",
+              "files" : {
+                "src/Task.kt" : {
+                  "name" : "src/Task.kt",
+                  "placeholders" : [
+                    {
+                      "offset" : 22,
+                      "length" : 3,
+                      "possible_answer" : "var",
+                      "placeholder_text" : "val"
+                    }
+                  ],
+                  "is_visible" : true,
+                  "text" : "fun variables() {\n    val example = 1\n    example = 2\n}"
+                },
+                "test/Tests.kt" : {
+                  "name" : "test/Tests.kt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import org.junit.Assert\nimport org.junit.Test\n\nclass Test {\n    @Test fun testSolution() {\n        //TODO: implement your test here\n        Assert.assertTrue(\"Val must be var\", true)\n    }\n}"
+                }
+              },
+              "description_text" : "<html>\nIn languages we have different ways of making new variables.\nWe may be used to Javascript where we can make a variable with:\n<pre><code>\n  const example = \"This is a variable in Javascript\"\n</code></pre>\nor with Python, simply:\n<pre><code>\n  example2 = 23\n</code></pre>\nAny variable we create takes any data we give it. <br><br>\nKotlin is similar, where we use <code>val</code> and <code>var</code> instead of <code>const</code> and <code>let</code> in Javascript, respectively.<br><br>\nFor example:\n<pre><code>\n  val example = \"This is variable in Kotlin\"\n  var example2 = 23\n</code></pre>\nTry running the code in the task\n<div class=\"hint\">\n  <br>\n  In Javascript, when we used <code>const</code> we could not change the value.<br><br>\n  &nbsp;In Kotlin, <code>val</code> acts the same way <br><br>\n  When we used <code>let</code> we could change the value whenever we wanted.<br><br>\n  &nbsp;In Kotlin, <code>var</code> acts the same way\n  <br><br>\n  Try changing what keyword we used (<code>val</code> ) to create the variable and see if it compiles\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Types",
+              "files" : {
+                "src/Task.kt" : {
+                  "name" : "src/Task.kt",
+                  "placeholders" : [
+                    {
+                      "offset" : 143,
+                      "length" : 39,
+                      "possible_answer" : "1, 1",
+                      "placeholder_text" : "/* Add whatever inputs you want here */"
+                    }
+                  ],
+                  "is_visible" : true,
+                  "text" : "fun add(x: Int, y: Int): Int {\n    var result = x\n    for(i in 0 until y) {\n        result++\n    }\n    return result\n}\n\nfun runAdd() {\n    add(/* Add whatever inputs you want here */) // Anything that compiles\n}"
+                },
+                "test/Tests.kt" : {
+                  "name" : "test/Tests.kt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import org.junit.Assert\nimport org.junit.Test\n\nclass Test {\n    @Test fun testSolution() {\n        Assert.assertTrue(\"Try give add() a String\", true)\n    }\n}"
+                }
+              },
+              "description_text" : "<html>\n<h1>Variable types</h1>\nWhen working with Javascript or Python, you may have heard of the term 'type', for example: <br><br>\n<code>\"Example\"</code> is a <code>String</code><br>\n<code>16</code> is an <code>Integer</code><br>\n<code>[2, 3, 4]</code> is an <code>Array</code>\n<br><br>\nand so on, for all 'types' of data we want to store\n<br><br>\nTypes are important when programming because our programs need to know what to do with data.\nWe can't add an integer the same way we add a string\n<div class=\"hint\">\n  You might have seen this if you ever tried adding <code>1 + 1</code>, or <code>\"1\" + \"1\"</code> in Javascript or Python\n  <br>\n  In the first case, we get <code>2</code>, but in the second case, we get <code>\"11\"</code> <br><br>\n  This is because strings could be <code>\"Hello\"</code>, and <code>\"world\"</code>, and when we add them we want to get <code>\"Hello world\"</code>\n  <br><br>\n  It looks confusing because we see numbers inside our string, but they are also a <code>String</code> type, and get added the same way\n  <br><br>\n  This behaviour is because of types, which each variable is secretly given when you create it\n</div>\n<h1>Soft typed vs. Hard typed</h1>\nSome languages are called <code>soft typed</code> languages. <br>\nThese languages will handle the types of variables for you\n<br>\n&nbsp;- Javascript and Python are <code>soft typed</code>\n<br><br>\nOther languages are called <code>hard typed</code> languages, which do not handle variable types.\n<br>\n&nbsp;- Kotlin is <code>hard typed</code>\n<br><br>\nFor example:\n<pre><code>\n  function add(x, y) {\n    let result = x;\n    for(i=0; i < y; i++) {\n      result++;\n    }\n    return result;\n  }\n</code></pre>\nworks in Javascript for any two integers, the same function in Kotlin looks like (also in the Task.kt file):\n<pre><code>\n  fun add(x: Int, y: Int): Int {\n    var result = x\n    for(i in 0 until y) {\n        result++\n    }\n    return result\n  }\n</code></pre>\nThis is very bad code (and you should never write it), but works as an example\n<br><br>\n<b>Try giving our Kotlin function a <code>String</code> for <code>x</code>, <code>y</code>, or both</b>, and see what happens\n<br><br>\nYou can also try the Javascript function in the Chrome/Firefox console if you want, or just look at the hint below:\n<div class=\"hint\">\n  <pre><code>\n    >>add(1, 2)\n    - 3\n    >>add(\"Hello\", \"world\")\n    - \"Hello\"\n    >>add(4, \"world\")\n    - 4\n  </code></pre>\n</div>\nAs you can see, in Kotlin our function will either work or give an error, but in Javascript it will always try run, giving us the <i>wrong output without warning</i> because of it handling types for us\n<br><br>\nThis is one reason some people prefer <code>hard typed</code> over <code>soft typed</code>, but both types of language have many benefits and downsides to consider",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        }
+      ],
+      "type" : "section"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    ext.kotlin_version = '1.3.41'\n\n    repositories {\n        mavenCentral()\n        \n    }\n\n    dependencies {\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n    apply plugin: 'kotlin'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n        \n    }\n\n    dependencies {\n        compile \"org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version\"\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    compileKotlin.destinationDir = compileJava.destinationDir\n\n    compileKotlin {\n        kotlinOptions.jvmTarget = \"1.8\"\n    }\n    compileTestKotlin {\n        kotlinOptions.jvmTarget = \"1.8\"\n    }\n\n    sourceSets {\n        main {\n            kotlin.srcDir 'src'\n            java.srcDir 'src'\n        }\n        test {\n            kotlin.srcDir 'test'\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n    test {\n        outputs.upToDateWhen { false }\n        afterTest { TestDescriptor test, TestResult result ->\n            if (result.resultType == TestResult.ResultType.FAILURE) {\n                def message = result.exception?.message ?: \"Wrong answer\"\n                def lines = message.readLines()\n                println \"#educational_plugin FAILED + \" + lines[0]\n                lines.subList(1, lines.size()).forEach { line ->\n                  println \"#educational_plugin\" + line\n                }\n                // we need this to separate output of different tests\n                println()\n            }\n        }\n    }\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}

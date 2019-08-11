@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Creating variables/Differences_in_Kotlin-Variables-Creating_variables.iml" filepath="$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Creating variables/Differences_in_Kotlin-Variables-Creating_variables.iml" group="Kotlin_Mobile_Test_Course/Differences_in_Kotlin-Variables-Creating_variables" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Creating variables/Differences_in_Kotlin-Variables-Creating_variables_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Creating variables/Differences_in_Kotlin-Variables-Creating_variables_main.iml" group="Kotlin_Mobile_Test_Course/Differences_in_Kotlin-Variables-Creating_variables" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Creating variables/Differences_in_Kotlin-Variables-Creating_variables_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Creating variables/Differences_in_Kotlin-Variables-Creating_variables_test.iml" group="Kotlin_Mobile_Test_Course/Differences_in_Kotlin-Variables-Creating_variables" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Types/Differences_in_Kotlin-Variables-Types.iml" filepath="$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Types/Differences_in_Kotlin-Variables-Types.iml" group="Kotlin_Mobile_Test_Course/Differences_in_Kotlin-Variables-Types" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Types/Differences_in_Kotlin-Variables-Types_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Types/Differences_in_Kotlin-Variables-Types_main.iml" group="Kotlin_Mobile_Test_Course/Differences_in_Kotlin-Variables-Types" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Types/Differences_in_Kotlin-Variables-Types_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Differences in Kotlin/Variables/Types/Differences_in_Kotlin-Variables-Types_test.iml" group="Kotlin_Mobile_Test_Course/Differences_in_Kotlin-Variables-Types" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kotlin_Mobile_Test_Course.iml" filepath="$PROJECT_DIR$/.idea/Kotlin_Mobile_Test_Course.iml" group="Kotlin_Mobile_Test_Course" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="Kotlin_Mobile_Test_Course/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="Kotlin_Mobile_Test_Course/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="Kotlin_Mobile_Test_Course/util" />
+    </modules>
+  </component>
+</project>
